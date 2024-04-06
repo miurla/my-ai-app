@@ -4,6 +4,8 @@ import { useState } from "react";
 import { useUIState, useActions } from "ai/rsc";
 import type { AI } from "./action";
 
+export const runtime = "edge";
+
 export default function Page() {
   const [inputValue, setInputValue] = useState("");
   const [messages, setMessages] = useUIState<typeof AI>();
