@@ -53,7 +53,7 @@ async function submitUserMessage(userInput: string) {
 
   // The `render()` creates a generated, streamable UI.
   const ui = render({
-    model: "gpt-4-0125-preview",
+    model: "gpt-3.5-turbo",
     provider: openai,
     messages: [
       { role: "system", content: "You are a flight assistant" },
