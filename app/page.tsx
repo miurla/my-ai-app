@@ -5,7 +5,7 @@ import { useUIState, useActions } from "ai/rsc";
 import type { AI } from "./action";
 
 // Without this line, streaming will not work when deployed to Vercel
-export const runtime = "edge";
+export const dynamic = "force-dynamic";
 
 export default function Page() {
   const [inputValue, setInputValue] = useState("");
